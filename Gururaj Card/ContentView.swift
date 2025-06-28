@@ -11,11 +11,21 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color(.green).opacity(0.8).ignoresSafeArea()
-            
-            Text("Gururaja")
-                .font(.custom("PirataOne-Regular", size: 40))
-                .bold()
-                .foregroundColor(.white)
+            VStack{
+                Image("guruImage")
+                    .resizable().aspectRatio(contentMode: .fit)
+                    .cornerRadius(60)
+                    .frame(width: 170, height: 170)
+                    
+                   
+                Text("Gururaja")
+                    .font(.custom("PirataOne-Regular", size: 40))
+                    .bold()
+                    .foregroundColor(.white)
+                Text("Ios Developer")
+                    .font(.custom("Poppins-Regular", size: 25))
+                    .foregroundColor(.white)
+            }
         }
         
     }
