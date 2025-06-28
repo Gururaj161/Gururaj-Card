@@ -12,7 +12,10 @@ struct ContentView: View {
         ZStack {
             Color(.green).opacity(0.8).ignoresSafeArea()
             
-            Text("Hello, world!")
+            Text("Gururaja")
+                .font(.custom("PirataOne-Regular", size: 40))
+                .bold()
+                .foregroundColor(.white)
         }
         
     }
